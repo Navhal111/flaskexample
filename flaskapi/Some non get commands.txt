@@ -1,0 +1,66 @@
+pip install --only-binary :all: mysqlclient
+
++++++++++++++++
+http://localhost:5000/api/v1/ping
+
+check api working or not
+
+
+
++++++++++++++++++++++++++++++++++++
+Add emplopyee
+http://localhost:5000/api/v1/add_employee
+
+json:- 
+{
+	"name":"ritesh",
+	"email":"dfgdf@asdad",
+	"contact":252524646578
+	
+}
+
+
+
+
+
+++++++++++++++++++++++++
+list employee 
+
+http://localhost:5000/api/v1/list_employee
+
+[
+    {
+        "emp_id": 3,
+        "name": "ritesh1",
+        "email": "dfgdf@asdad",
+        "contact": 2147483647
+    },
+    {
+        "emp_id": 4,
+        "name": "ritesh",
+        "email": "dfgdf@asdad",
+        "contact": 2147483647
+    },
+    {
+        "emp_id": 5,
+        "name": "ritesh",
+        "email": "dfgdf@asdad",
+        "contact": 2147483647
+    }
+]
+
+
+
+
+++++++++++++++++++++++++++++++++++++++++++++++++
+update api 
+http://localhost:5000/api/v1/update_employee/empid=3
+
+json := 
+
+{
+	"name":"ritesh1",
+	"email":"dfgdf@asdad",
+	"contact":252524646578
+	
+}
